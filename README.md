@@ -1,3 +1,5 @@
+This is a fork for minor variations on Paul Branson's excellent work on application of Pangeo in HPC see https://github.com/pbranson/c3dis-2019-pangeo
+
 # c3dis-2019-pangeo
 
 A set of notebooks demonstrating recent functionality provided by the libraries promulgated by the [Pangeo community](http://pangeo.io)
