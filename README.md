@@ -1,6 +1,8 @@
+This is a fork for minor variations on Paul Branson's excellent work on application of Pangeo in HPC see https://github.com/pbranson/c3dis-2019-pangeo
+
 # c3dis-2019-pangeo
 
-A set of notebooks demonstrating recent functionality provided by the libraries promulgated through [Pangeo community](http://pangeo.io)
+A set of notebooks demonstrating recent functionality provided by the libraries promulgated by the [Pangeo community](http://pangeo.io)
 
 To setup and use these notebooks from HPC (at Pawsey/CSIRO) there are some helper scripts and config files. 
 
