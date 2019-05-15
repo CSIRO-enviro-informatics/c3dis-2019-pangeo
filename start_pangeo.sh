@@ -1,12 +1,10 @@
 #!/bin/bash -l
 
-#SBATCH --partition=workq
 ##SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=10
 #SBATCH --mem-per-cpu=5G
-#SBATCH --time=24:00:00
-#SBATCH --account=pawsey0106
+#SBATCH --time=4:00:00
 #SBATCH --export=NONE
 #SBATCH -J pangeo    # name
 #SBATCH -o pangeo-%J.out
@@ -14,7 +12,7 @@
 module unload numpy
 module unload python
 
-export PATH=/group/pawsey0106/miniconda3/bin:$PATH
+export PATH=/home/lei053/miniconda3/bin:$PATH
 source activate pyAODN
 
 # Create trap to kill notebook when user is done
@@ -35,7 +33,7 @@ let LOCALHOST_PORT=8888
 JNHOST=$(hostname)
 JNIP=$(hostname -i)
 
-LOGFILE=$MYSCRATCH/pangeo_jupyter_log.$(date +%Y%m%dT%H%M%S)
+LOGFILE=/home/lei053/pangeo_jupyter_log.$(date +%Y%m%dT%H%M%S)
 
 
 echo "Logging jupyter notebook session on $JNHOST to $LOGFILE"

@@ -24,6 +24,6 @@ jobqueue:
     memory: 120GB
     processes: 5
     queue: workq
-    project: pawsey0106
+    project: bentest  
     walltime: 0-2:00:00
 
