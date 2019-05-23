@@ -1,0 +1,9 @@
+version: '3'
+services:
+  pannote:
+    build: .
+    volumes:
+      - /srv/apps/prototype-0519:/prototype-0519 
+    ports:
+      - "8199:8888"
+    command: "/bin/bash -c 'source activate pyAODN && jupyter notebook --allow-root --no-browser --ip=0.0.0.0 --NotebookApp.token=\"\" --NotebookApp.password=\"\"'"
